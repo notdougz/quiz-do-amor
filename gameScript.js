@@ -51,7 +51,6 @@ function correctAnswer(correctAlternative, selectedAlternative, section){
 
 
 
-
 //LISTENERS 
 
 btnGame[0].addEventListener('click', ()=>{
