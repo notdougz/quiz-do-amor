@@ -4,6 +4,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     background-color: rgb(48, 1, 1); /* Ou o seu fundo desejado */
 }
 
@@ -13,7 +14,7 @@ main {
     flex-direction: column;
 }
 
-#start, #level4, #level5, #level6 {
+#level1, #level2, #level3, #level4, #level5, #level6 {
     min-height: 100vh; /* Garante que cada seção ocupe pelo menos a altura da tela */
     display: flex;
     justify-content: center;
@@ -56,6 +57,7 @@ main {
 #startBtn{
     width: 160px;
     height: 50px;
+    
 
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(255, 0, 0);
@@ -139,9 +141,13 @@ ul{
     color: white;
     font-family: 'Arima';
     border: none;
-    border-top-left-radius: 15px;
+    border-radius:  10px;
     
 }
+
+.btnGame:hover{
+    background-color: rgb(77, 1, 1);
+}   
 
 #loveLetter {
     max-width: 600px;
