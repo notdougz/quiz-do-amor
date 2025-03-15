@@ -83,3 +83,27 @@ btnGame[4].addEventListener('click', ()=>{
 
     correctAnswer(alternatives[1].id, alternativesChecked,4 )
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+    const noBtn = document.getElementById("noBtn");
+    const yesBtn = document.getElementById("yesBtn");
+    const proposalDiv = document.getElementById("proposal");
+    const responseDiv = document.getElementById("response");
+
+    noBtn.addEventListener("mouseover", function () {
+        const maxX = window.innerWidth - noBtn.offsetWidth;
+        const maxY = window.innerHeight - noBtn.offsetHeight;
+
+        const randomX = Math.random() * maxX;
+        const randomY = Math.random() * maxY;
+
+        noBtn.style.position = "absolute";
+        noBtn.style.left = `${randomX}px`;
+        noBtn.style.top = `${randomY}px`;
+    });
+
+    yesBtn.addEventListener("click", function () {
+        proposalDiv.style.display = "none"; // Esconde os botões
+        responseDiv.classList.remove("hidden"); // Exibe a mensagem de aceitação
+    });
+});

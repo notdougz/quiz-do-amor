@@ -195,3 +195,36 @@ ul{
     animation: fadeInScale 2s 1s forwards; /* Atraso para aparecer depois da carta */
 }
 
+#proposal {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#yesBtn, #noBtn {
+    width: 100px;
+    height: 40px;
+    font-family: Arial, sans-serif;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#yesBtn:hover, #noBtn:hover {
+    background-color: rgb(77, 1, 1);
+}
+
+.hidden {
+    display: none;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+#response img {
+    margin-top: 10px;
+    border-radius: 10px;
+}
