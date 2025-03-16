@@ -4,88 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
     <title>Level1 - Início</title>
+
+    <!-- Importação de estilos -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/imports.css">
     <link rel="stylesheet" href="css/keyframes.css">
+
+    <!-- Ícone da aba do navegador -->
     <link rel="shortcut icon" href="https://www.svgimages.com/svg-image/s3/heart-256x256.png" type="image/x-icon">
+
+    <!-- Áudio do jogo -->
     <audio src="audios/musicadoamor.mp3" autoplay></audio>
     <audio id='pare' src="audios/pare.mp3"></audio>
 </head>
 <body>
-<main>
-    <section id='level1'>
-    <div id='titleLevel'>
-        <h1 class="level-title">Level 1</h1>
-        <h2 class='level-subtitle'>O início de tudo</h2>
-    </div>
 
-    
+<main>
+
+    <!-- Level 1 -->
+    <section id='level1'>
+        <div id='titleLevel'>
+            <h1 class="level-title">Level 1</h1>
+            <h2 class='level-subtitle'>O início de tudo</h2>
+        </div>
+
+        <!-- Perguntas -->
         <h4 class="question">Onde foi nosso primeiro beijo?</h4>
         <nav>
             <ul>
-                <li>
-                    <input type="radio" name="alternative" id="a1">
-                    <label for="a1">Em uma festa</label>
-                </li>
-                <li>
-                    <input type="radio" name="alternative" id="a2">
-                    <label for="a2">Na escola</label>
-                </li>
-                <li>
-                    <input type="radio" name="alternative" id="a3">
-                    <label for="a3">No shopping</label>
-                </li>
-                <li>
-                    <input type="radio" name="alternative" id="a4">
-                    <label for="a4">No parque</label>
-                </li>
+                <li><input type="radio" name="alternative" id="a1"><label for="a1">Em uma festa</label></li>
+                <li><input type="radio" name="alternative" id="a2"><label for="a2">Na escola</label></li>
+                <li><input type="radio" name="alternative" id="a3"><label for="a3">No shopping</label></li>
+                <li><input type="radio" name="alternative" id="a4"><label for="a4">No parque</label></li>
+            </ul>
+        </nav>
+
+        <!-- Botão para avançar -->
+        <button class='btnGame'>AVANÇAR</button>
+    </section>
+
+    <!-- Level 2 -->
+    <section id='level2' style="display:none">
+        <div id='titleLevel'>
+            <h1 class="level-title">Level 2</h1>
+            <h2 class='level-subtitle'>Beleza não é importante, mas...</h2>
+        </div>
+
+        <h4 class="question">Quem é mais bonito?</h4>
+        <nav>
+            <ul>
+                <li><input type="radio" name="alternative2" id="a1"><label for="a1">Mirella</label></li>
+                <li><input type="radio" name="alternative2" id="a2"><label for="a2">Douglas</label></li>
+                <li><input type="radio" name="alternative2" id="a3"><label for="a3">Os dois</label></li>
+                <li><input type="radio" name="alternative2" id="a4"><label for="a4">Parecem Shrek e Fiona</label></li>
             </ul>
         </nav>
 
         <button class='btnGame'>AVANÇAR</button>
     </section>
 
-
-    <section id='level2' style="display:none">
-        <div id='titleLevel'>
-            <h1 class="level-title">Level 2</h1>
-            <h2 class='level-subtitle'>Beleza não é importante, mas...</h2>
-        </div>
-    
-        
-            <h4 class="question">Quem é mais bonito</h4>
-            <nav>
-                <ul>
-                    <li>
-                        <input type="radio" name="alternative2" id="a1">
-                        <label for="a1">Mirella</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="alternative2" id="a2">
-                        <label for="a2">Douglas</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="alternative2" id="a3">
-                        <label for="a3">Os dois</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="alternative2" id="a4">
-                        <label for="a4">Parecem Shrek e Fiona</label>
-                    </li>
-                </ul>
-            </nav>
-    
-            <button class='btnGame'>AVANÇAR</button>
-        </section>
-
+        <!-- Level 3 -->
         <section id='level3' style="display:none">
             <div id='titleLevel'>
                 <h1 class="level-title">Level 3</h1>
                 <h2 class='level-subtitle'>Cai no golpe!!</h2>
             </div>
         
-            
+                <!-- Perguntas -->
                 <h4 class="question">Se tivéssemos que escolher um filme que representasse nosso relacionamento, qual seria?</h4>
                 <nav>
                     <ul>
@@ -107,18 +94,19 @@
                         </li>
                     </ul>
                 </nav>
-        
+
+                <!-- Botão para avançar -->
                 <button class='btnGame'>AVANÇAR</button>
             </section>
 
-
+        <!-- Level 4 -->
         <section id='level4' style="display:none">
             <div id='titleLevel'>
                 <h1 class="level-title">Level 4</h1>
                 <h2 class='level-subtitle'>Vagabundo!</h2>
             </div>
         
-            
+                <!-- Perguntas -->
                 <h4 class="question">O que Douglas estuda?</h4>
                 <nav>
                     <ul>
@@ -140,18 +128,19 @@
                         </li>
                     </ul>
                 </nav>
-        
+
+                <!-- Botão para avançar -->
                 <button class='btnGame'>AVANÇAR</button>
             </section>
 
-            
+        <!-- Level 5 -->    
         <section id='level5' style="display:none">
             <div id='titleLevel'>
                 <h1 class="level-title">Level 5</h1>
                 <h2 class='level-subtitle'>Esse dia você deu prejuizo pro dono 😂</h2>
             </div>
         
-            
+                <!-- Perguntas -->
                 <h4 class="question">O que comemos quando te pedi em namoro?</h4>
                 <nav>
                     <ul>
@@ -173,37 +162,47 @@
                         </li>
                     </ul>
                 </nav>
-        
+
+                <!-- Botão para avançar -->
                 <button class='btnGame'>AVANÇAR</button>
             </section>
 
-            <section id="level6" style="display: none">
-                <div id="loveLetter">
-                    <h1 class="letter-title">Para o amor da minha vida ❤️</h1>
-                    <p class="letter-content">
-                        Desde o dia em que te conheci, minha vida se encheu de amor. Cada momento ao seu lado é um presente, 
-                        e sou grato por ter você comigo. Seu sorriso ilumina meus dias e seu carinho torna tudo mais especial.
-                        Sou sortudo por ter você ao meu lado, e quero passar o resto da minha vida ao seu lado.
-                        Me desculpa por todas as vezes que não fui um bom parceiro, tento melhorar a cada dia para ser alguém melhor para você.  
-                        Te amo infinitamente! 💖  
-                    </p>
-                    <p class="letter-signature">Com todo meu amor, Douglas.</p>
-                </div>
-            
-                <div id="photoContainer">
-                    <img src="assets/eu.jpg" alt="Nossa foto juntos" class="love-photo">
-                </div>
-                <div id="proposal">
-                    <p>Vamos casar, gatinha? 💍</p>
-                    <button id="yesBtn">Sim ❤️</button>
-                    <button id="noBtn">Não 😭</button>
-                </div>
-                
-                <div id="response" class="hidden">
-                    <h2 class="letter-yes">💖 Você disse SIM! 💖</h2>
-                </div>
-            </section>
+             <!-- Última fase: Carta e pedido de casamento -->
+    <section id="level6" style="display: none">
+        <div id="loveLetter">
+            <h1 class="letter-title">Para o amor da minha vida ❤️</h1>
+            <p class="letter-content">
+                Desde o dia em que te conheci, minha vida se encheu de amor. Cada momento ao seu lado é um presente, 
+                e sou grato por ter você comigo. Seu sorriso ilumina meus dias e seu carinho torna tudo mais especial.
+                Sou sortudo por ter você ao meu lado, e quero passar o resto da minha vida com você.
+                Me desculpa por todas as vezes que não fui um bom parceiro, tento melhorar a cada dia para ser alguém melhor para você.  
+                Te amo infinitamente! 💖  
+            </p>
+            <p class="letter-signature">Com todo meu amor, Douglas.</p>
+        </div>
+
+        <!-- Foto do casal -->
+        <div id="photoContainer">
+            <img src="assets/eu.jpg" alt="Nossa foto juntos" class="love-photo">
+        </div>
+
+        <!-- Pedido de casamento no brinks -->
+        <div id="proposal">
+            <p>Vamos casar, gatinha? 💍</p>
+            <button id="yesBtn">Sim ❤️</button>
+            <button id="noBtn">Não 😭</button>
+        </div>
+
+        <!-- Mensagem após aceitar -->
+        <div id="response" class="hidden">
+            <h2 class="letter-yes">💖 Você disse SIM! 💖</h2>
+        </div>
+    </section>
+
 </main>
+
+<!-- Importação do script do jogo -->
 <script src="gameScript.js"></script>
+
 </body>
 </html>
