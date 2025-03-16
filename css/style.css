@@ -1,115 +1,101 @@
-
-/*GLOBAL SETTINGS*/
+/*-------------------------------------------
+  GLOBAL SETTINGS: Definições globais de estilo
+--------------------------------------------*/
 body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background-color: rgb(48, 1, 1); /* Ou o seu fundo desejado */
+    height: 100%; /* Garante que o corpo e a página ocupem toda a altura */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    overflow-x: hidden; /* Impede rolagem horizontal */
+    background-color: rgb(48, 1, 1); /* Cor de fundo da página */
 }
 
 main {
-    min-height: 100vh; /* Garante que o conteúdo principal ocupe toda a altura da tela */
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Organiza o conteúdo de forma vertical */
 }
 
+/* Seções de nível */
 #level1, #level2, #level3, #level4, #level5, #level6 {
-    min-height: 100vh; /* Garante que cada seção ocupe pelo menos a altura da tela */
+    min-height: 100vh; /* Cada seção ocupa pelo menos a altura da tela */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Centraliza o conteúdo vertical e horizontalmente */
     flex-direction: column;
 }
 
-/*MAIN SETTINGS*/
+/*-------------------------------------------
+  MAIN SETTINGS: Estilo para elementos principais
+--------------------------------------------*/
 #title{
     text-align: center;
-    
-    font-family: 'Splash', cursive;
+    font-family: 'Splash', cursive; /* Fonte decorativa para o título */
     font-weight: lighter;
-    
-    font-size: 6rem;
-    color: red;
-
+    font-size: 6rem; /* Tamanho grande do título */
+    color: red; /* Cor vermelha para o título */
     margin-bottom: 0;
-
 }
 
 #subtitle{
     text-align: center;
-    color: rgb(194, 52, 9);
-
+    color: rgb(194, 52, 9); /* Cor do subtítulo */
     font-size: 2.5rem;
-    font-family: 'Splash';
-
+    font-family: 'Splash'; /* Mesma fonte decorativa do título */
     margin-top: 0;
 }
 
 #start{
     display: flex;
     flex-direction: column;
-
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
 #startBtn{
     width: 160px;
     height: 50px;
-    
-
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(255, 0, 0);
-    
+    background-color: rgb(255, 0, 0); /* Cor de fundo do botão */
     border: none;
-    border-radius: 10px;
-
+    border-radius: 10px; /* Bordas arredondadas */
     color: white;
-
-    transition: 1s;
+    transition: 1s; /* Transição suave para o hover */
 }
 
 #startBtn:hover{
-    background: rgb(77, 1, 1);
+    background: rgb(77, 1, 1); /* Cor de fundo do botão ao passar o mouse */
 }
 
-/*LEVEL SETTINGS*/
-
+/*-------------------------------------------
+  LEVEL SETTINGS: Estilos para os títulos e subtítulos dos níveis
+--------------------------------------------*/
 .level-title{
     text-align: center;
-    font-family: 'Arima',Arial, Helvetica, sans-serif;
+    font-family: 'Arima', Arial, Helvetica, sans-serif; /* Fonte do título dos níveis */
     font-size: 2rem;
-    color: rgb(255, 250, 250);
-    
-    margin-bottom: 0;
+    color: rgb(255, 250, 250); /* Cor clara para o título */
     margin: 0 20px;
-    border-bottom: 5px solid rgb(165, 0, 0);
-    
-
-    animation: downTitle 3s;
-   
+    border-bottom: 5px solid rgb(165, 0, 0); /* Linha abaixo do título */
+    animation: downTitle 3s; /* Animação para a entrada do título */
 }
 
 .level-subtitle{
     margin-top: 0;
     margin-bottom: none;
-
     text-align: center;
-    font-family: 'Arima',Arial, Helvetica, sans-serif;
+    font-family: 'Arima', Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    color: rgb(255, 250, 250);
-
-    animation: downTitle 2s;
-     
+    color: rgb(255, 250, 250); /* Cor clara para o subtítulo */
+    animation: downTitle 2s; /* Animação para a entrada do subtítulo */
 }
 
-
+/*-------------------------------------------
+  QUESTION AND BUTTON STYLES: Estilos para perguntas e botões
+--------------------------------------------*/
 section{
     margin: none;
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
 }
@@ -117,50 +103,48 @@ section{
 .question{
     color: white;
     text-align: center;
-    
     font-family: 'Arima', Arial, Helvetica, sans-serif;
-    font-size:2.5rem;
-
-    animation: comeFromLeft 1s ;
+    font-size: 2.5rem; /* Tamanho da fonte da pergunta */
+    animation: comeFromLeft 1s; /* Animação para a entrada da pergunta */
 }
 
 ul{
     list-style-type: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-
-    animation: comeFromLeft 1s;
+    animation: comeFromLeft 1s; /* Animação para a entrada da lista */
 }
- 
+
 .btnGame{
-    animation: comeFromLeft 2s;
+    animation: comeFromLeft 2s; /* Animação para a entrada dos botões de jogo */
     width: 150px;
     height: 50px;
-
-    background-color: rgb(231, 9, 9);
+    background-color: rgb(231, 9, 9); /* Cor de fundo do botão */
     color: white;
     font-family: 'Arima';
     border: none;
-    border-radius:  10px;
-    
+    border-radius: 10px; /* Bordas arredondadas */
 }
 
 .btnGame:hover{
-    background-color: rgb(77, 1, 1);
-}   
+    background-color: rgb(77, 1, 1); /* Cor de fundo ao passar o mouse */
+}
 
+/*-------------------------------------------
+  LOVE LETTER STYLES: Estilos para a carta de amor
+--------------------------------------------*/
 #loveLetter {
     max-width: 600px;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 15px; /* Bordas arredondadas */
     text-align: center;
     color: white;
     font-family: 'Arima', Arial, sans-serif;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 2s forwards;
+    animation: fadeInUp 2s forwards; /* Animação para a carta de amor */
 }
 
 .letter-title {
@@ -179,6 +163,7 @@ ul{
     font-size: 1.2rem;
 }
 
+/* Estilos para a foto na carta de amor */
 #photoContainer {
     margin-top: 20px;
     display: flex;
@@ -192,9 +177,12 @@ ul{
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
     opacity: 0;
     transform: scale(0.8);
-    animation: fadeInScale 2s 1s forwards; /* Atraso para aparecer depois da carta */
+    animation: fadeInScale 2s 1s forwards; /* Animação com atraso para a foto */
 }
 
+/*-------------------------------------------
+  PROPOSAL BUTTONS: Estilos para botões de proposta
+--------------------------------------------*/
 #proposal {
     text-align: center;
     margin-top: 20px;
@@ -214,9 +202,12 @@ ul{
 }
 
 #yesBtn:hover, #noBtn:hover {
-    background-color: rgb(77, 1, 1);
+    background-color: rgb(77, 1, 1); /* Cor de fundo ao passar o mouse */
 }
 
+/*-------------------------------------------
+  HIDDEN ELEMENTS: Estilos para elementos ocultos
+--------------------------------------------*/
 .hidden {
     display: none;
     text-align: center;
@@ -229,6 +220,9 @@ ul{
     border-radius: 10px;
 }
 
+/*-------------------------------------------
+  ADDITIONAL STYLES: Outros ajustes
+--------------------------------------------*/
 #letter-yes {   
     font-family: Arial, sans-serif;    
 }

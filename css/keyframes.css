@@ -1,54 +1,59 @@
+/* 
+   Animações usadas no jogo 
+   --------------------------------
+   Este arquivo contém todas as animações utilizadas no site.
+*/
+
+/* Animação: Título descendo suavemente */
 @keyframes downTitle {
-    from{
+    from {
         transform: translateY(-100px);
         opacity: 0;
     }
-
-    to{
+    to {
         transform: translateY(0);
+        opacity: 1;
     }
 }
 
+/* Animação: Elemento vindo da esquerda */
 @keyframes comeFromLeft {
-    from{
+    from {
         transform: translateX(-100px);
         opacity: 0;
     }
-
-    to{
-        
+    to {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
+/* Animação: Resposta errada piscando em vermelho */
 @keyframes wrongAnswer {
-    0%{
-        background-color: red;
-    }
-
-    100%{
-
-    }
+    0% { background-color: red; }
+    50% { background-color: rgba(255, 0, 0, 0.5); }
+    100% { background-color: inherit; }
 }
 
+/* Animação: Resposta correta piscando em verde */
 @keyframes correctAnswer {
-    0%{
-        background-color: green;
-    }
-
-    100%{
-
-    }
+    0% { background-color: green; }
+    50% { background-color: rgba(0, 255, 0, 0.5); }
+    100% { background-color: inherit; }
 }
 
+/* Animação: Efeito de digitação (para textos que aparecem aos poucos) */
 @keyframes typing {
     from { max-width: 0; }
     to { max-width: 100%; }
 }
 
+/* Animação: Cursor piscando no efeito de digitação */
 @keyframes blinkCursor {
     50% { border-color: transparent; }
 }
 
+/* Animação: Fade-in com escala */
 @keyframes fadeInScale {
     from {
         opacity: 0;
@@ -60,6 +65,7 @@
     }
 }
 
+/* Animação: Fade-in subindo */
 @keyframes fadeInUp {
     from {
         opacity: 0;
